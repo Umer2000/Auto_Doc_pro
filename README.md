@@ -11,7 +11,7 @@ Built solo during the **Code Craft AI x Dev Hackathon**, this tool combines the 
 🔗 https://auto-doc-pro.vercel.app/
 
   
-📁 [View Source on GitHub](https://github.com/Umer2000/autodoc-pro)
+📁 [View Source on GitHub](https://github.com/Umer2000/Auto_Doc_pro)
 
 ---
 
