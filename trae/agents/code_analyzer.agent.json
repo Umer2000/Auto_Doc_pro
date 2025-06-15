@@ -1,0 +1,27 @@
+{
+    "name": "code_analyzer",
+    "description": "Analyzes raw Python code and returns a concise explanation of each function including its purpose, inputs, outputs, and edge cases.",
+    "model": "gpt-4",
+    "temperature": 0.4,
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Raw Python code that needs to be analyzed."
+        }
+      },
+      "required": ["code"]
+    },
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "analysis": {
+          "type": "string",
+          "description": "Explanation of the code, including function purpose, inputs, outputs, and edge cases."
+        }
+      }
+    },
+    "prompt": "You are a professional code analyst. Your task is to analyze the following Python code and explain each function. For every function, include:\n\n1. Purpose\n2. Inputs\n3. Outputs\n4. Edge Cases\n\nReturn a detailed and clear explanation as a single string.\n\nCode:\n\n{{code}}"
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoDoc Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AutoDoc Pro</h1>
+
+    <label>Upload .py file:</label>
+    <input type="file" id="fileInput" accept=".py" onchange="handleFileUpload()" />
+
+    <label>Paste your Python code:</label>
+    <textarea id="code" placeholder="def add(a, b): return a + b"></textarea>
+
+    <label>Paste analysis (from agent):</label>
+    <textarea id="analysis" placeholder="Adds two numbers a and b."></textarea>
+
+    <button onclick="generateDoc()">⚙️ Generate Docstrings</button>
+
+    <h2>🧾 Result</h2>
+    <pre id="output">Your documented code will appear here...</pre>
+    <button onclick="copyToClipboard()">📋 Copy to Clipboard</button>
+
+    <label class="toggle">
+      <input type="checkbox" id="darkToggle" onchange="toggleDarkMode()" />
+      🌙 Dark Mode
+    </label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
